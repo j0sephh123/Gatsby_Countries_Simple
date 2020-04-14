@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Navbar from "./navbar"
+import Search from "./search"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,12 +22,20 @@ const Layout = ({ children }) => {
           title
         }
       }
+      custom_api {
+        continents {
+          name
+        }
+      }
     }
   `)
+
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar continents={data.custom_api.continents} />
+      <Search />
       <div
         style={{
           margin: `0 auto`,
@@ -34,7 +44,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{marginTop: 150, borderTop: '1px solid gray'}}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

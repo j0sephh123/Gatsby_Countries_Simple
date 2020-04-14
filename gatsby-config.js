@@ -1,11 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Countries starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-graphql-universal",
+      options: {
+        typeName: "Custom_name",
+        fieldName: "custom_api",
+        url: "https://countries.trevorblades.com/",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
