@@ -10,6 +10,8 @@ Server + MySQL - XAMPP or equivalent
 code - local, ftp, github
 There is a config.php file where it access the db and that's basically it
 
+*What is a php file*
+
 *Directory Structure*
 `wp-admin & wp-includes` are overwritten by every new wordpress release.
 
