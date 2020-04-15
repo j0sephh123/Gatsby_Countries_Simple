@@ -20,10 +20,10 @@ You work in `wp-content`. There are 3 folders there:
 `plugins` - they looks scarier than they actually are, you need a 
 - directory and `index.php`, 
 - example to dynamically create a post in wp instead of using the admin panel
-- 
+
 ```php
 foreach($ourApiData as $item) {
-  // the idea here is to get prepared data and insert it in wp 
+  // the idea here is to get prepared data from api and insert it in wp 
   $newPostID = wp_insert_post([
     "post_type" => "race",
     "post_title" => $item["name"], 
@@ -33,10 +33,11 @@ foreach($ourApiData as $item) {
 }
 ```
   
-`themes` - list of themes. WP has default ones, you can look at them.
+`themes` - list of themes. WP has default ones, you can look at them. Will this help you learn more - probably not. For me it was demotivating.
 
 ## 4. How does a wordpress database structure look?
-- `wp_links` 
+meta is like the information about that post/user/comment
+- `wp_links` - deprecated afaik
 - `wp_options` 
 - `wp_posts`  
 - `wp_terms`  
