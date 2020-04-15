@@ -1,6 +1,6 @@
-# WP thoughts - tried to follow a structure - didn't quite work out.
+# WP thoughts 
 
-## 1. My knowledge of how/why it is used in general.
+## 1. My knowledge of how wp is used
 
 ## 2. My learning experience.
 
@@ -36,7 +36,7 @@ foreach($ourApiData as $item) {
 `themes` - list of themes. WP has default ones, you can look at them. Will this help you learn more - probably not. For me it was demotivating.
 
 ## 4. How does a wordpress database structure look?
-meta is like the information about that post/user/comment
+Meta is like the information about that post/user/comment.
 - `wp_links` - deprecated afaik
 - `wp_options` 
 - `wp_posts`  
