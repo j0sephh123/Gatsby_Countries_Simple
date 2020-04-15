@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Country = ({ pageContext }) => {
-
+  console.log(pageContext);
 
   const { name, capital, languages } = pageContext.country;
   const continentName = pageContext.continent.name;

@@ -1,5 +1,4 @@
 const axios = require("axios");
-const fs = require('fs').promises;
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
