@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const styles = {
   ul: {
     display: 'flex',
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignItems: 'center',
   },
   li: {listStyle: 'none', paddingLeft: 10},
