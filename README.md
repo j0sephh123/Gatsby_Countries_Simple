@@ -86,7 +86,7 @@ add_action('wp_ajax_nopriv_getAPIStuff', 'getAPIStuff');
 
 This is used both for plugins and for front-end code. What's does it do. It starts a new WP instance, you have access to all WP functionality, you can fetch and create new posts.
 
-It's impossible to actually learn all the actions or filters, because they are simply too many. 
+It's impossible to actually learn all the actions or filters, because they are simply too many and they are sorted A-Z. For someone who has used good documentation, like that of Angular and Vue -> this is absurd.
 
 - Wordpress is a popular and is a CMS. Ok. How do I learn more about it? Actually as a developer I care about its documentation, not so much about how it presents itself infront of the client. 
 - Key point: Wordpress components use a mix of object orientated programming and procedural programming, but on the whole the software is not built from the ground up according to OO principles. It's also never had the "big rewrite". Why do I care about that? It simply uses old code, so it's backwards compatible. 
@@ -120,7 +120,6 @@ Some like to get it done quickly - the majority of people.
 Others like me *try* to write maintainable and readable code.
 - My advice would be having 2 stages: 
 _Stage1_ - rapid prototyping - deliver the wanted product as quickly as possible. _Stage2_ - talk about that code, try to refactor it, document it, see if it is already used somewhere else. Talk about how it would scale.
-We did only Stage1.
 
 # Gatsby stuff
 
