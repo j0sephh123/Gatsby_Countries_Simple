@@ -19,6 +19,19 @@ You work in `wp-content`. There are 3 folders there:
 
 `plugins` - they looks scarier than they actually are, you need a 
 - directory and `index.php`, 
+- example to dynamically create a post in wp instead of using the admin panel
+- 
+```php
+foreach($ourApiData as $item) {
+  // the idea here is to get prepared data and insert it in wp 
+  $newPostID = wp_insert_post([
+    "post_type" => "race",
+    "post_title" => $item["name"], 
+    "post_status" => "publish", // draft...
+  ]); 
+  update_post("race_property_72", $item["new_value_of_the_property"], $newPostID); // update custom field
+}
+```
   
 `themes` - list of themes. WP has default ones, you can look at them.
 
